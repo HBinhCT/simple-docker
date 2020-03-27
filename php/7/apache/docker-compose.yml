@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: hbinhct/php:7-apache
+    ports:
+      - 80
+      - 443
+    volumes:
+      # Map code here
+      - ./code/:/var/www/html/
